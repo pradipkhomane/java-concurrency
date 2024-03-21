@@ -1,4 +1,4 @@
-package com.pradipkhomane.features.locks;
+package com.pradipkhomane.features.locks.intrinsic;
 
 import java.util.concurrent.Executors;
 
@@ -69,5 +69,7 @@ public class IntrinsicLocks {
         for (int i = 0; i < 10; i++) {
             executor.execute(lockObject::reentrancy);
         }
+
+        executor.shutdown();
     }
 }
