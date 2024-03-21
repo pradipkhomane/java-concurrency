@@ -1,4 +1,4 @@
-package com.pradipkhomane.features.locks;
+package com.pradipkhomane.features.locks.intrinsic;
 
 import java.util.concurrent.Executors;
 
