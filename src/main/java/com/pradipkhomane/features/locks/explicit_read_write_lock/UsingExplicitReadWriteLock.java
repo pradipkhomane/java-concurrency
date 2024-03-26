@@ -33,7 +33,7 @@ public class UsingExplicitReadWriteLock {
         writeLock.lock(); // Lock the write lock
         try {
             System.out.println("Writing a content : " + newContentToAppend); // Output message with new content
-            content = content + newContentToAppend; // Append new content to existing content
+            content = new StringBuilder().append(content).append(newContentToAppend).toString(); // Append new content to existing content
         } finally {
             writeLock.unlock(); // Unlock the write lock
         }
